@@ -14,12 +14,14 @@ const Notification = ({
 	text,
 }: INotification) => (
 	<div className={styles.notification}>
-		<SVG src={ICONS[type]} />
+		<div>
+			<SVG src={ICONS[type]} />
 
-		<div className={styles.notification__text}>
-			<h4 className={styles.notification__title}>{getNotificationTitle(type)}</h4>
+			<div className={styles.notification__text}>
+				<h4 className={styles.notification__title}>{getNotificationTitle(type)}</h4>
 
-			<p className={styles.notification__text}>{text}</p>
+				<p className={styles.notification__text}>{text}</p>
+			</div>
 		</div>
 	</div>
 );

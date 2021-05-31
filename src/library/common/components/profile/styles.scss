@@ -1,0 +1,154 @@
+.userProfile {
+	width: 238px;
+	position: relative;
+	height: 91px;
+	transform: rotate(-4.46deg) skew(-20deg);
+
+	&::before {
+		border-radius: 15px;
+		content: '';
+		backdrop-filter: blur(10px);
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;	
+		left: 0;
+		background: rgba(22, 22, 22, 0.59);
+	}
+
+	&__header {
+		z-index: 10;
+		padding: 0 10px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__username {
+		z-index: 10;
+		margin-top: -15px;
+
+		position: relative;
+
+		background: linear-gradient(83.88deg, #7113CE 30.78%, #287DCB 84.95%);
+		box-shadow: 0px 0px 50px #7113CE;
+		border-radius: 25px;
+
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+
+		padding: 5px 18px;
+		height: fit-content;
+
+		font-family: Geometria;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 18px;
+		line-height: 23px;
+		color: #FFFFFF;
+	}
+
+	&__footer {
+		z-index: 10;
+		padding-right: 30px;
+		padding-left: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__id {
+		z-index: 10;
+		margin-top: 6px;
+		transform: skew(-20deg);
+
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+
+		background: rgba(0, 0, 0, 0.4);
+		border-radius: 5px;
+
+		& p {
+			font-family: Geometria;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 12px;
+			line-height: 15px;
+			color: #FFFFFF;
+		}
+
+		padding: 6px 12px;
+	}
+
+	&__online {
+		z-index: 10;
+		align-self: flex-end;
+		display: inline-flex;
+		align-items: center;
+
+		& > p {
+			font-family: Geometria;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 12px;
+			line-height: 12px;
+			margin-left: 2px;
+			color: #FFFFFF;
+		}
+
+		& > div	{
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+			background: rgba(44, 129, 4, 0.6);
+			position: relative;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+
+			&::before {
+				// position: ;
+				border-radius: 50%;
+				content: '';
+				width: 10px;
+				height: 10px;
+				background: rgba(44, 129, 4, 0.6);
+			}
+		}
+	}
+
+	&__timeWrap {
+		z-index: 10;
+		align-self: flex-end;
+		display: inline-flex;
+		align-items: center;
+	}
+
+	&__time {
+		z-index: 10;
+		display: grid;
+		margin-left: 3px;
+
+		&_time, &_date {
+			z-index: 10;
+			font-family: Geometria;
+			font-style: normal;
+		}
+
+		&_time {
+			z-index: 10;
+			font-weight: bold;
+			font-size: 10px;
+			line-height: 13px;
+			color: #FFFFFF;
+		}
+
+		&_date {
+			z-index: 10;
+			font-weight: 300;
+			font-size: 8px;
+			line-height: 10px;
+			color: #A0A0A0;
+		}
+	}
+}
