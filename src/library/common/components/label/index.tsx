@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styles.scss';
 
 interface ILabel {
-	value: string;
+	value: string | number;
 	style?: React.CSSProperties,
 }
 

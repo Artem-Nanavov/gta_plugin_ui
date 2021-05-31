@@ -1,0 +1,33 @@
+.panel {
+	margin-left: 20px;
+	width: fit-content;
+	display: inline-flex;
+	flex-direction: column;
+	row-gap: 14px;
+
+	&__item {
+		transform: skew(-10deg);
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+		width: 100px;
+		height: 70px;
+		display: flex;
+		align-items: center;
+		background: rgba(46, 45, 45, 0.83);
+		border-radius: 10px;
+
+		& > p {
+			position: absolute;
+			text-align: center;
+			font-family: Geometria; 
+			font-style: normal;
+			font-weight: bold;
+			font-size: 9px;
+			line-height: 11px;
+			color: #FFFFFF;
+			top: -6px;
+			// margin-top: -6px;
+		}
+	}
+}
