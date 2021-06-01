@@ -1,0 +1,47 @@
+.panel {
+	position: absolute;
+	right: 30px;
+	top: auto;
+	display: inline-flex;
+	flex-direction: column;
+	row-gap: 6px;
+ 
+	&__item {
+		border-radius: 5px;
+		width: 73px;
+		height: 27px;
+		overflow-x: hidden;
+		display: inline-flex;
+		transform: skew(-20deg);
+
+		& > div {
+			width: 50%;
+			backdrop-filter: blur(4px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		& > div:nth-child(1) {
+			background: rgba(10, 10, 10, 0.5);
+
+			& p {
+				transform: skew(20deg);
+				font-family: Geometria;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 15px;
+				color: #FFFFFF;
+			}
+		}
+
+		& > div:nth-child(2) {
+			background: rgba(40, 40, 40, 0.74);
+
+			& svg {
+				transform: skew(20deg);
+			}
+		}
+	}
+}

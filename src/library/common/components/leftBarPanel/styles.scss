@@ -4,6 +4,7 @@
 	display: inline-flex;
 	flex-direction: column;
 	row-gap: 14px;
+	position: absolute;
 
 	&__item {
 		transform: skew(-10deg);
@@ -27,7 +28,6 @@
 			line-height: 11px;
 			color: #FFFFFF;
 			top: -6px;
-			// margin-top: -6px;
 		}
 	}
 }

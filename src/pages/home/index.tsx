@@ -2,6 +2,7 @@ import React from 'react';
 import Notification from 'library/common/components/notification';
 import UserProfile from 'library/common/components/profile';
 import LeftBarPanel from 'library/common/components/leftBarPanel';
+import PanelWithHints from 'library/common/components/panelWithHints';
 import styles from './styles.scss';
 
 const items: Array<{
@@ -27,6 +28,29 @@ const items: Array<{
 	{
 		icon: 'FOOD',
 		count: 0,
+	},
+];
+
+const hints = [
+	{
+		icon: 'MAP',
+		value: 'F1',
+	},
+	{
+		icon: 'PHONE',
+		value: 'F2',
+	},
+	{
+		icon: 'SETTINGS',
+		value: 'F3',
+	},
+	{
+		icon: 'CART',
+		value: 'F4',
+	},
+	{
+		icon: 'I',
+		value: 'F5',
 	},
 ];
 
@@ -60,6 +84,8 @@ const HomePage = () => (
 		</header>
 
 		<LeftBarPanel items={items} />
+
+		<PanelWithHints items={hints as any} />
 	</div>
 );
 
