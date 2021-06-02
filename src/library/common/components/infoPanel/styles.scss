@@ -1,0 +1,75 @@
+.info {
+	position: absolute;
+	bottom: 30px;
+	left: 330px;
+
+	display: grid;
+	grid-row-gap: 15px;
+}
+
+.item {
+	display: inline-flex;
+	align-items: center;
+	column-gap: 4px;
+
+	&__icon {
+		transform: skew(-15deg);
+		width: 55.5px;
+		height: 39px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		background: rgba(46, 45, 45, 0.7);
+		border-radius: 10px;
+	}
+
+	&__list {
+		display: inline-flex;
+		column-gap: 2px;
+	}
+
+	& li {
+		width: 19px;
+		height: 11px;
+		border-radius: 2px;
+		transform: skew(-20deg);
+	}
+
+	&__disabled {
+		background: rgba(46, 45, 45, 0.7);
+	}
+}
+
+.food__active {
+	background: rgba(253, 183, 4, 0.7);
+	box-shadow: 0px 0px 5px #F2B516;
+}
+
+.water__active {
+	background: rgba(6, 240, 255, 0.7);
+	box-shadow: 0px 0px 5px #06F0FF;
+}
+
+.coordinates {
+	width: 210px;
+	height: 40px;
+	display: inline-flex;
+	align-items: center;
+	background: rgba(46, 45, 45, 0.38);
+	border-radius: 10px;
+	transform: skew(-20deg);
+
+	& p {
+		font-family: Geometria;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 11px;
+		line-height: 14px;
+		color: #FFFFFF;
+		transform: skew(20deg);
+	}
+
+	& svg {
+		transform: skew(20deg);
+	}
+}

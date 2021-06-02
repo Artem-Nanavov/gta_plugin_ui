@@ -12,17 +12,23 @@ import MAP from './map.svg';
 import PHONE from './phone.svg';
 import SETTINGS from './settings.svg';
 import I from './i.svg';
+import FOOD2 from './food2.svg';
+import WATER from './water.svg';
+import MAP2 from './map2.svg';
 
 export default {
 	I,
 	MAP,
 	GUN,
 	WARN,
+	MAP2,
 	CART,
 	FOOD,
 	LOGO,
+	FOOD2,
 	CLOCK,
 	ERROR,
+	WATER,
 	PHONE,
 	SUCCESS,
 	MED_KIT,

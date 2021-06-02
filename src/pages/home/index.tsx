@@ -3,6 +3,7 @@ import Notification from 'library/common/components/notification';
 import UserProfile from 'library/common/components/profile';
 import LeftBarPanel from 'library/common/components/leftBarPanel';
 import PanelWithHints from 'library/common/components/panelWithHints';
+import InfoPanel from 'library/common/components/infoPanel';
 import styles from './styles.scss';
 
 const items: Array<{
@@ -86,6 +87,12 @@ const HomePage = () => (
 		<LeftBarPanel items={items} />
 
 		<PanelWithHints items={hints as any} />
+
+		<InfoPanel
+			food={{active: 3, maxField: 5}}
+			water={{active: 3, maxField: 5}}
+			coordinates="Лос-Сантос, Калифорния"
+		/>
 	</div>
 );
 

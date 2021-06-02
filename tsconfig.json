@@ -1,5 +1,7 @@
 {
 	"compilerOptions": {
+		"experimentalDecorators": true,
+		"experimentalDecorators": true,
 		"baseUrl": "./src",
 		"outDir": "/dist",
 		"module": "esnext",
@@ -7,13 +9,14 @@
 		"sourceMap": true,
 		"allowJs": true,
 		"jsx": "react",
+		"lib": ["es2015", "es6", "dom", "es2018.promise", "ES2017", "ES2016.Array.Include"],
 		"moduleResolution": "node",
 		"allowSyntheticDefaultImports": true,
 		"forceConsistentCasingInFileNames": true,
 		"strict": true,
+		"typeRoots": ["node_modules/@types", "src/typings"],
 		"suppressImplicitAnyIndexErrors": true,
 		"resolveJsonModule": true,
-		"typeRoots": ["node_modules/@types", "src/types"],
 		"plugins": [
 			{
 				"name": "typescript-tslint-plugin",
