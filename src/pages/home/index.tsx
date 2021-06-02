@@ -4,6 +4,7 @@ import UserProfile from 'library/common/components/profile';
 import LeftBarPanel from 'library/common/components/leftBarPanel';
 import PanelWithHints from 'library/common/components/panelWithHints';
 import InfoPanel from 'library/common/components/infoPanel';
+import UserBalance from 'library/common/components/userBalance';
 import styles from './styles.scss';
 
 const items: Array<{
@@ -88,11 +89,20 @@ const HomePage = () => (
 
 		<PanelWithHints items={hints as any} />
 
-		<InfoPanel
-			food={{active: 3, maxField: 5}}
-			water={{active: 3, maxField: 5}}
-			coordinates="Лос-Сантос, Калифорния"
-		/>
+		<footer className={styles.footer}>
+			<InfoPanel
+				food={{active: 3, maxField: 5}}
+				water={{active: 3, maxField: 5}}
+				coordinates="Лос-Сантос, Калифорния"
+			/>
+
+			<UserBalance
+				cash="150000000"
+				card="990000000"
+				isMicroMuted
+				microTriggerBtn="N"
+			/>
+		</footer>
 	</div>
 );
 
