@@ -5,6 +5,7 @@ import LeftBarPanel from 'library/common/components/leftBarPanel';
 import PanelWithHints from 'library/common/components/panelWithHints';
 import InfoPanel from 'library/common/components/infoPanel';
 import UserBalance from 'library/common/components/userBalance';
+import CarInfo from 'library/common/components/carInfo';
 import styles from './styles.scss';
 
 const items: Array<{
@@ -94,6 +95,15 @@ const HomePage = () => (
 				food={{active: 3, maxField: 5}}
 				water={{active: 3, maxField: 5}}
 				coordinates="Лос-Сантос, Калифорния"
+			/>
+
+			<CarInfo
+				speed={74}
+				maxSpeed={130}
+				fuel="79"
+				lock={false}
+				mileage="999"
+				turnSignal="right"
 			/>
 
 			<UserBalance

@@ -1,0 +1,222 @@
+.sp {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mileage {
+	z-index: 100;
+	width: 110px;
+	height: 24px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.34);
+		backdrop-filter: blur(10px);
+		border-radius: 10px;
+	}
+	
+	& p {
+		z-index: 100;
+	}
+
+	& p:nth-child(1) {
+		position: absolute;
+		text-align: center;
+		top: -5px;
+		font-family: Geometria;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 9px;
+		line-height: 11px;
+		color: #FFFFFF;
+	}
+
+	& p:nth-child(2) {
+		font-family: Geometria;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		line-height: 12px;
+		color: #FFFFFF;
+	} 
+}
+
+.carInfo {
+	padding: 20px 15px 20px 30px;
+	width: 364px;
+	height: 152px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__speedInfo {
+		width: 130px;
+		position: relative;
+		z-index: 100;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&_info {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+
+			& p {
+				font-family: Geometria;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 23px;
+				color: #FFFFFF;
+			}
+	
+			& > div {
+				margin-top: 4px;
+				display: flex;
+				align-items: center;
+				column-gap: 7px;
+			}
+		}
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+		transform: skew(-20deg);
+		background: rgba(17, 17, 17, 0.44);
+		backdrop-filter: blur(10px);
+	}
+
+	&__car {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__head {
+		display: flex;
+		align-items: center;
+		column-gap: 15px;
+	}
+
+	&__item {
+		width: 62px;
+		height: 38px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		& > p, & svg {
+			z-index: 100;
+		}
+
+		& > p {
+			position: absolute;
+			font-family: Geometria;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 9px;
+			line-height: 11px;
+			color: #FFFFFF;
+			text-align: center;
+			top: -6px;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.34);
+			border-radius: 10px;
+			backdrop-filter: blur(10px);
+			transform: skew(-20deg);
+		}
+	}
+
+	&__fuel {
+		display: inline-flex;
+		align-items: flex-end;
+
+		& > p {
+			position: relative;
+			font-family: Geometria;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 11px;
+			line-height: 13px;
+			color: #FFFFFF;
+		}
+	}
+}
+
+.circleBg {
+	fill: none;
+}
+
+.circle {
+	fill: none;
+	stroke-width: 1;
+	stroke-linecap: round;
+	animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+	0% {
+		stroke-dasharray: 0 100;
+	}
+}
+
+.circularChart {
+	width: 130px;
+	top: -6px;
+	left: -6px;
+	position: absolute;
+}
+
+.circularChart .circleBg {
+	font: none;
+	// stroke: #FF9F00;
+}
+
+.percentage {
+	fill: #666;
+	font-family: sans-serif;
+	font-size: 0.5em;
+	text-anchor: middle;
+}
+
+.speed {
+	// transform: rotate(-234deg);
+	position: relative;
+
+	&__active {
+		transform: rotate(-126deg);
+	}
+}
+
+.speed .circle {
+	z-index: 1000;
+	stroke: #9309FF;
+}
