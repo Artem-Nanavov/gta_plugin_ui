@@ -4,6 +4,7 @@ import {BrowserRouter} from 'react-router-dom';
 import Routes from './Routes';
 
 import './nullstyles.css';
+import '../fonts/fonts.css';
 
 render(
 	<BrowserRouter>

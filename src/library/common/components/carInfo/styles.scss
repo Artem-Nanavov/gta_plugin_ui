@@ -33,7 +33,7 @@
 		position: absolute;
 		text-align: center;
 		top: -5px;
-		font-family: Geometria;
+		font-family: 'Geometria';
 		font-style: normal;
 		font-weight: bold;
 		font-size: 9px;
@@ -42,7 +42,7 @@
 	}
 
 	& p:nth-child(2) {
-		font-family: Geometria;
+		font-family: 'Geometria';
 		font-style: normal;
 		font-weight: bold;
 		font-size: 10px;
@@ -75,7 +75,7 @@
 			flex-direction: column;
 
 			& p {
-				font-family: Geometria;
+				font-family: 'Geometria';
 				font-style: normal;
 				font-weight: bold;
 				font-size: 18px;
@@ -131,7 +131,7 @@
 
 		& > p {
 			position: absolute;
-			font-family: Geometria;
+			font-family: 'Geometria';
 			font-style: normal;
 			font-weight: bold;
 			font-size: 9px;
@@ -161,7 +161,7 @@
 
 		& > p {
 			position: relative;
-			font-family: Geometria;
+			font-family: 'Geometria';
 			font-style: normal;
 			font-weight: bold;
 			font-size: 11px;
